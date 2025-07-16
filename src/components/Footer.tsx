@@ -1,6 +1,6 @@
-import React from 'react';
-import { MapPin, Phone, Clock, Mail, Facebook, Instagram, Youtube } from 'lucide-react';
-import { scrollToSection } from '../hooks/useSmoothScroll';
+import React from "react";
+import {  Phone, Clock, Mail, Instagram } from "lucide-react";
+import { scrollToSection } from "../hooks/useSmoothScroll";
 
 const Footer = () => {
   return (
@@ -19,13 +19,18 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-400">
-              Vaš partner za zdravlje u Novom Pazaru. Četvrt veka pružamo 
+              Vaš partner za zdravlje u Novom Pazaru. Četvrt veka pružamo
               najkvalitetnije farmaceutske usluge uz personalizovanu pažnju.
             </p>
             <div className="flex space-x-4">
-              <Facebook className="h-6 w-6 text-gray-400 hover:text-emerald-400 cursor-pointer transition-colors" />
-              <Instagram className="h-6 w-6 text-gray-400 hover:text-emerald-400 cursor-pointer transition-colors" />
-              <Youtube className="h-6 w-6 text-gray-400 hover:text-emerald-400 cursor-pointer transition-colors" />
+              <a
+                href="https://www.instagram.com/avicenaplus/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-emerald-400 transition-colors"
+              >
+                <Instagram className="h-6 w-6" />
+              </a>
             </div>
           </div>
 
@@ -33,12 +38,54 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Brzi linkovi</h4>
             <ul className="space-y-2">
-              <li><button onClick={() => scrollToSection('home')} className="text-gray-400 hover:text-emerald-400 transition-colors">Početna</button></li>
-              <li><button onClick={() => scrollToSection('about')} className="text-gray-400 hover:text-emerald-400 transition-colors">O nama</button></li>
-              <li><button onClick={() => scrollToSection('products')} className="text-gray-400 hover:text-emerald-400 transition-colors">Proizvodi</button></li>
-              <li><button onClick={() => scrollToSection('loyalty')} className="text-gray-400 hover:text-emerald-400 transition-colors">Loyalty program</button></li>
-              <li><button onClick={() => scrollToSection('locations')} className="text-gray-400 hover:text-emerald-400 transition-colors">Lokacije</button></li>
-              <li><button onClick={() => scrollToSection('contact')} className="text-gray-400 hover:text-emerald-400 transition-colors">Kontakt</button></li>
+              <li>
+                <button
+                  onClick={() => scrollToSection("home")}
+                  className="text-gray-400 hover:text-emerald-400 transition-colors"
+                >
+                  Početna
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection("about")}
+                  className="text-gray-400 hover:text-emerald-400 transition-colors"
+                >
+                  O nama
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection("products")}
+                  className="text-gray-400 hover:text-emerald-400 transition-colors"
+                >
+                  Proizvodi
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection("loyalty")}
+                  className="text-gray-400 hover:text-emerald-400 transition-colors"
+                >
+                  Loyalty program
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection("locations")}
+                  className="text-gray-400 hover:text-emerald-400 transition-colors"
+                >
+                  Lokacije
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => scrollToSection("contact")}
+                  className="text-gray-400 hover:text-emerald-400 transition-colors"
+                >
+                  Kontakt
+                </button>
+              </li>
             </ul>
           </div>
 
@@ -47,13 +94,19 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Naše lokacije</h4>
             <div className="space-y-4">
               <div>
-                <h5 className="font-medium text-emerald-400">Generala Živkovića</h5>
-                <p className="text-gray-400 text-sm">Generala Živkovića, Novi Pazar 36300</p>
+                <h5 className="font-medium text-emerald-400">
+                  Generala Živkovića
+                </h5>
+                <p className="text-gray-400 text-sm">
+                  Generala Živkovića, Novi Pazar 36300
+                </p>
                 <p className="text-gray-400 text-sm">020 387343</p>
               </div>
               <div>
                 <h5 className="font-medium text-emerald-400">Mur</h5>
-                <p className="text-gray-400 text-sm">Mur br. 279, Novi Pazar 36300</p>
+                <p className="text-gray-400 text-sm">
+                  Mur br. 279, Novi Pazar 36300
+                </p>
                 <p className="text-gray-400 text-sm">020 382500</p>
               </div>
             </div>
@@ -89,24 +142,6 @@ const Footer = () => {
         </div>
 
         {/* Newsletter */}
-        <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="max-w-md mx-auto text-center">
-            <h4 className="text-lg font-semibold mb-4">Pretplatite se na newsletter</h4>
-            <p className="text-gray-400 mb-4 text-sm">
-              Budite obavešteni o akcijama, novim proizvodima i zdravstvenim savetima
-            </p>
-            <div className="flex space-x-2">
-              <input
-                type="email"
-                placeholder="Vaša email adresa"
-                className="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-emerald-400"
-              />
-              <button className="bg-emerald-600 hover:bg-emerald-700 px-6 py-2 rounded-lg font-semibold transition-colors">
-                Pretplati se
-              </button>
-            </div>
-          </div>
-        </div>
 
         {/* Bottom */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
@@ -115,9 +150,24 @@ const Footer = () => {
               © 2024 Avicena Plus. Sva prava zadržana.
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-emerald-400 transition-colors">Privatnost</a>
-              <a href="#" className="text-gray-400 hover:text-emerald-400 transition-colors">Uslovi korišćenja</a>
-              <a href="#" className="text-gray-400 hover:text-emerald-400 transition-colors">Cookie policy</a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-emerald-400 transition-colors"
+              >
+                Privatnost
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-emerald-400 transition-colors"
+              >
+                Uslovi korišćenja
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-emerald-400 transition-colors"
+              >
+                Cookie policy
+              </a>
             </div>
           </div>
         </div>
