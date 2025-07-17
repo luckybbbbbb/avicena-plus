@@ -2,13 +2,14 @@ import React from 'react';
 import { MapPin, Clock, Phone, Car, Bus } from 'lucide-react';
 import murPharmacy from '../images/avicena_plus_mur.jpeg';
 import generalZivkovicPharmacy from '../images/avicena-plus-vuk.jpeg';
+import OpenStreetMap from './OpenStreetMap';
 
 const Locations = () => {
   const locations = [
     {
       id: 1,
       name: "Avicena Plus - Generala Živkovića",
-      address: "Generala Živkovića, Novi Pazar 36300",
+      address: "Generala Živkovića 135, Novi Pazar",
       phone: "020 387343",
       hours: "07:30 - 22:00",
       description: "Glavna apoteka u centru grada sa kompletnim asortimentom",
@@ -18,7 +19,7 @@ const Locations = () => {
     {
       id: 2,
       name: "Avicena Plus - Mur",
-      address: "Mur br. 279, Novi Pazar 36300",
+      address: "Mur br. 279, Novi Pazar",
       phone: "020 382500",
       hours: "07:30 - 22:00",
       description: "Apoteka u Mur ulici, idealna za stanovnike tog dela grada",
@@ -41,31 +42,13 @@ const Locations = () => {
           </p>
         </div>
 
-        {/* Map placeholder */}
-        <div className="bg-gray-200 h-96 rounded-2xl mb-16 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 to-blue-500/20"></div>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center text-gray-600">
-              <MapPin className="h-16 w-16 mx-auto mb-4" />
-              <h3 className="text-2xl font-semibold mb-2">Interaktivna mapa</h3>
-              <p>Obe naše lokacije u Novom Pazaru</p>
-            </div>
+        {/* Google Map */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-semibold text-gray-900 mb-2">Interaktivna mapa</h3>
+            <p className="text-gray-600">Obe naše lokacije u Novom Pazaru</p>
           </div>
-          
-          {/* Location pins */}
-          <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <div className="bg-emerald-600 text-white p-3 rounded-full shadow-lg animate-pulse">
-              <MapPin className="h-6 w-6" />
-            </div>
-            <div className="text-xs text-center mt-1 bg-white px-2 py-1 rounded shadow">Generala Živkovića</div>
-          </div>
-          
-          <div className="absolute bottom-1/3 right-1/3 transform translate-x-1/2 translate-y-1/2">
-            <div className="bg-blue-600 text-white p-3 rounded-full shadow-lg animate-pulse">
-              <MapPin className="h-6 w-6" />
-            </div>
-            <div className="text-xs text-center mt-1 bg-white px-2 py-1 rounded shadow">Mur</div>
-          </div>
+          <OpenStreetMap />
         </div>
 
         {/* Locations grid */}

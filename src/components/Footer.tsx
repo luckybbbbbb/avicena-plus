@@ -98,14 +98,14 @@ const Footer = () => {
                   Generala Živkovića
                 </h5>
                 <p className="text-gray-400 text-sm">
-                  Generala Živkovića, Novi Pazar 36300
+                  Generala Živkovića 135, Novi Pazar
                 </p>
                 <p className="text-gray-400 text-sm">020 387343</p>
               </div>
               <div>
                 <h5 className="font-medium text-emerald-400">Mur</h5>
                 <p className="text-gray-400 text-sm">
-                  Mur br. 279, Novi Pazar 36300
+                  Mur br. 279, Novi Pazar
                 </p>
                 <p className="text-gray-400 text-sm">020 382500</p>
               </div>
