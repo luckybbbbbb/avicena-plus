@@ -4,14 +4,9 @@ import { Award, Users, Shield, Heart, Clock, CheckCircle } from 'lucide-react';
 const About = () => {
   const achievements = [
     {
-      year: "1999",
-      title: "Osnivanje",
-      description: "Otvaranje prve apoteke u Novom Pazaru"
-    },
-    {
-      year: "2005",
-      title: "Proširenje",
-      description: "Otvaranje druge lokacije"
+      year: "1996",
+      title: "Osnivanje prve apoteke",
+      description: "Otvaranje prve Avicena Plus apoteke u Novom Pazaru"
     },
     {
       year: "2015",
@@ -24,9 +19,14 @@ const About = () => {
       description: "Pokretanje programa lojalnosti"
     },
     {
-      year: "2024",
-      title: "25 godina",
-      description: "Četvrt veka poverenja i tradicije"
+      year: "2022",
+      title: "Otvaranje druge apoteke",
+      description: "Proširenje sa drugom lokacijom u Mur ulici"
+    },
+    {
+      year: "2025",
+      title: "29 godina tradicije",
+      description: "Skoro tri decenije poverenja i tradicije"
     }
   ];
 
@@ -39,7 +39,7 @@ const About = () => {
     {
       icon: <Shield className="h-8 w-8 text-emerald-600" />,
       title: "Pouzdanost",
-      description: "25 godina neprekidnog rada i poverenja"
+      description: "29 godina neprekidnog rada i poverenja"
     },
     {
       icon: <Users className="h-8 w-8 text-blue-600" />,
@@ -67,23 +67,23 @@ const About = () => {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center space-x-2 mb-4">
             <Award className="h-8 w-8 text-emerald-600" />
-            <span className="text-emerald-600 font-semibold text-lg">25 godina tradicije</span>
+            <span className="text-emerald-600 font-semibold text-lg">29 godina tradicije</span>
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             O Avicena Plus apoteci
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Četvrt veka predano služimo zdravlju naše zajednice u Novom Pazaru. 
+            Skoro tri decenije predano služimo zdravlju naše zajednice u Novom Pazaru. 
             Naša misija je pružanje najkvalitetnijih farmaceutskih usluga uz personalizovanu pažnju.
           </p>
         </div>
 
-        {/* 25 years badge */}
+        {/* 28 years badge */}
         <div className="text-center mb-16">
           <div className="inline-block bg-gradient-to-r from-emerald-600 to-blue-600 text-white p-8 rounded-2xl">
-            <div className="text-6xl font-bold mb-2">25</div>
+            <div className="text-6xl font-bold mb-2">29</div>
             <div className="text-xl">godina poverenja</div>
-            <div className="text-sm opacity-90 mt-2">1999 - 2024</div>
+            <div className="text-sm opacity-90 mt-2">1996 - 2025</div>
           </div>
         </div>
 

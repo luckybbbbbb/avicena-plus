@@ -45,8 +45,6 @@ const Locations = () => {
         {/* Google Map */}
         <div className="mb-16">
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-2">Interaktivna mapa</h3>
-            <p className="text-gray-600">Obe naše lokacije u Novom Pazaru</p>
           </div>
           <OpenStreetMap />
         </div>

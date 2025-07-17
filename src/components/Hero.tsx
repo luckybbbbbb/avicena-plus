@@ -12,7 +12,7 @@ const Hero = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-2 text-emerald-600">
                 <Award className="h-6 w-6" />
-                <span className="font-semibold">25 godina poverenja</span>
+                <span className="font-semibold">29 godina poverenja</span>
               </div>
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Vaša zdravlja je naš
@@ -36,7 +36,7 @@ const Hero = () => {
             {/* Trust indicators */}
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-emerald-600">25</div>
+                <div className="text-3xl font-bold text-emerald-600">29</div>
                 <div className="text-sm text-gray-600">godina tradicije</div>
               </div>
               <div className="text-center">

@@ -15,11 +15,11 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold">Avicena Plus</h3>
-                <p className="text-emerald-400 text-sm">25 godina tradicije</p>
+                <p className="text-emerald-400 text-sm">29 godina tradicije</p>
               </div>
             </div>
-            <p className="text-gray-400">
-              Vaš partner za zdravlje u Novom Pazaru. Četvrt veka pružamo
+                        <p className="text-gray-400">
+              Vaš partner za zdravlje u Novom Pazaru. Skoro tri decenije pružamo 
               najkvalitetnije farmaceutske usluge uz personalizovanu pažnju.
             </p>
             <div className="flex space-x-4">

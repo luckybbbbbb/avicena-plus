@@ -44,7 +44,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-2xl font-bold text-gray-900">Avicena Plus</h1>
-              <p className="text-sm text-emerald-600">25 godina tradicije</p>
+              <p className="text-sm text-emerald-600">29 godina tradicije</p>
             </div>
           </div>
 
