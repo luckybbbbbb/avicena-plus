@@ -1,5 +1,7 @@
 import React from 'react';
 import { MapPin, Clock, Phone, Car, Bus } from 'lucide-react';
+import murPharmacy from '../images/avicena_plus_mur.jpeg';
+import generalZivkovicPharmacy from '../images/avicena-plus-vuk.jpeg';
 
 const Locations = () => {
   const locations = [
@@ -10,8 +12,8 @@ const Locations = () => {
       phone: "020 387343",
       hours: "07:30 - 22:00",
       description: "Glavna apoteka u centru grada sa kompletnim asortimentom",
-      features: ["Veliki parking", "Pristup za invalide", "Digitalno čekanje"],
-      image: "https://images.pexels.com/photos/6823568/pexels-photo-6823568.jpeg?auto=compress&cs=tinysrgb&w=800"
+      features: ["Brza usluga", "Parking dostupan", "Pristupačna lokacija"],
+      image: generalZivkovicPharmacy
     },
     {
       id: 2,
@@ -20,8 +22,8 @@ const Locations = () => {
       phone: "020 382500",
       hours: "07:30 - 22:00",
       description: "Apoteka u Mur ulici, idealna za stanovnike tog dela grada",
-      features: ["24h hitna ambulanta", "Brza usluga", "Parking dostupan"],
-      image: "https://images.pexels.com/photos/5452293/pexels-photo-5452293.jpeg?auto=compress&cs=tinysrgb&w=800"
+      features: ["Brza usluga", "Parking dostupan", "Pristupačna lokacija"],
+      image: murPharmacy
     }
   ];
 
@@ -122,33 +124,7 @@ const Locations = () => {
         </div>
 
         {/* Transportation info */}
-        <div className="bg-gray-50 p-8 rounded-2xl">
-          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            Kako do nas?
-          </h3>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="flex items-start space-x-4">
-              <Car className="h-8 w-8 text-emerald-600 mt-1" />
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Automobilom</h4>
-                <p className="text-gray-600">
-                  Obe lokacije imaju dostupan parking. Centar grada je udaljen 5 minuta 
-                  od glavnih saobraćajnica.
-                </p>
-              </div>
-            </div>
-            <div className="flex items-start space-x-4">
-              <Bus className="h-8 w-8 text-blue-600 mt-1" />
-              <div>
-                <h4 className="font-semibold text-gray-900 mb-2">Javnim prevozom</h4>
-                <p className="text-gray-600">
-                  Lokacija kod autobuske stanice je direktno dostupna svim linijama, 
-                  a centar grada je udaljen 10 minuta pešice od glavne stanice.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+       
       </div>
     </section>
   );

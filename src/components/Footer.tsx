@@ -127,7 +127,7 @@ const Footer = () => {
                 <Phone className="h-5 w-5 text-emerald-400" />
                 <div>
                   <p className="text-sm text-gray-400">Centrala</p>
-                  <p className="text-white">+381 20 123 456</p>
+                  <p className="text-white">+381 20 387 343</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
@@ -147,28 +147,8 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © 2024 Avicena Plus. Sva prava zadržana.
+              © 2025 Avicena Plus. Sva prava zadržana.
             </p>
-            <div className="flex space-x-6 text-sm">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-emerald-400 transition-colors"
-              >
-                Privatnost
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-emerald-400 transition-colors"
-              >
-                Uslovi korišćenja
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-emerald-400 transition-colors"
-              >
-                Cookie policy
-              </a>
-            </div>
           </div>
         </div>
       </div>

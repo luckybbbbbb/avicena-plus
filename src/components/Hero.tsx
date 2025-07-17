@@ -76,10 +76,10 @@ const Hero = () => {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-emerald-600 to-blue-600 text-white p-4 rounded-lg text-center">
+                <button onClick={() => scrollToSection('locations')} className="w-full bg-gradient-to-r from-emerald-600 to-blue-600 text-white p-4 rounded-lg text-center hover:from-emerald-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105">
                   <div className="text-lg font-semibold">Posetite nas!</div>
                   <div className="text-sm opacity-90">Za loyalty karticu</div>
-                </div>
+                </button>
               </div>
             </div>
 
