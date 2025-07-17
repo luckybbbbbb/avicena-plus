@@ -19,9 +19,14 @@ const Hero = () => {
                 <span className="text-emerald-600 block">prioritet</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Četvrt veka brižljive nege za vašu porodicu. Pristupite našem loyalty programu 
+                Skoro tri decenije brižljive nege za vašu porodicu. Pristupite našem loyalty programu 
                 i uživajte u ekskluzivnim pogodnostima i popustima.
               </p>
+              <div className="mt-4 p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
+                <p className="text-emerald-800 font-semibold">
+                  🏆 Jedina apoteka u Srbiji sa popustima na svaki recept!
+                </p>
+              </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">

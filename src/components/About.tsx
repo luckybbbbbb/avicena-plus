@@ -50,6 +50,11 @@ const About = () => {
       icon: <Clock className="h-8 w-8 text-purple-600" />,
       title: "Dostupnost",
       description: "Radimo 7 dana u nedelji za vas"
+    },
+    {
+      icon: <Award className="h-8 w-8 text-yellow-500" />,
+      title: "Jedinstveni popusti",
+      description: "Jedina apoteka u Srbiji sa popustima na svaki recept"
     }
   ];
 
@@ -76,6 +81,11 @@ const About = () => {
             Skoro tri decenije predano služimo zdravlju naše zajednice u Novom Pazaru. 
             Naša misija je pružanje najkvalitetnijih farmaceutskih usluga uz personalizovanu pažnju.
           </p>
+          <div className="mt-6 p-4 bg-emerald-50 border-l-4 border-emerald-600 rounded-r-lg">
+            <p className="text-lg text-emerald-800 font-semibold">
+              🏆 Jedina apoteka u Srbiji koja daje popuste na svaki recept!
+            </p>
+          </div>
         </div>
 
         {/* 28 years badge */}
@@ -118,7 +128,7 @@ const About = () => {
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Naše vrednosti
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
             {values.map((value, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                 <div className="bg-gray-50 p-4 rounded-full w-fit mx-auto mb-4">

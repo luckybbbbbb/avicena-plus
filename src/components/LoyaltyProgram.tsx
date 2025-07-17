@@ -24,23 +24,18 @@ const LoyaltyProgram = () => {
   const benefits = [
     {
       icon: <Percent className="h-8 w-8 text-emerald-600" />,
-      title: "15% popust",
+      title: "Popust",
       description: "Na sve proizvode odmah nakon registracije"
-    },
-    {
-      icon: <Gift className="h-8 w-8 text-blue-600" />,
-      title: "Bonus pokloni",
-      description: "Ekskluzivni pokloni za loyalty članove"
-    },
-    {
-      icon: <Star className="h-8 w-8 text-yellow-500" />,
-      title: "Prioritetno opsluživanje",
-      description: "Brža usluga i personalizovana pažnja"
     },
     {
       icon: <Users className="h-8 w-8 text-purple-600" />,
       title: "Besplatne konsultacije",
       description: "Stručni saveti naših farmaceuta"
+    },
+    {
+      icon: <CheckCircle className="h-8 w-8 text-yellow-600" />,
+      title: "Popusti na recepte",
+      description: "Jedina apoteka u Srbiji sa popustima na svaki recept"
     }
   ];
 
@@ -74,6 +69,11 @@ const LoyaltyProgram = () => {
             Pristupite ekskluzivnom programu lojalnosti i uživajte u posebnim pogodnostima 
             koje smo pripremili za naše cenjene kupce.
           </p>
+          <div className="mt-6 p-4 bg-gradient-to-r from-yellow-50 to-orange-50 border-2 border-yellow-200 rounded-xl">
+            <p className="text-lg text-yellow-800 font-bold">
+              🏆 Jedina apoteka u Srbiji koja daje popuste na svaki recept!
+            </p>
+          </div>
         </div>
 
         {/* Stats */}
@@ -93,7 +93,7 @@ const LoyaltyProgram = () => {
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Vaše prednosti
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {benefits.map((benefit, index) => (
               <div key={index} className="text-center p-6 bg-gray-50 rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
                 <div className="bg-white p-4 rounded-full w-fit mx-auto mb-4 shadow-md">
