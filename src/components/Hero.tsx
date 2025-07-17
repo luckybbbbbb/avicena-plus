@@ -4,7 +4,7 @@ import { scrollToSection } from '../hooks/useSmoothScroll';
 
 const Hero = () => {
   return (
-    <section id="home" className="bg-gradient-to-br from-emerald-50 to-blue-50 py-20">
+    <section id="home" className="bg-gradient-to-br from-emerald-50 to-blue-50 py-20" itemScope itemType="https://schema.org/Pharmacy">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
@@ -14,11 +14,11 @@ const Hero = () => {
                 <Award className="h-6 w-6" />
                 <span className="font-semibold">29 godina poverenja</span>
               </div>
-              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight" itemProp="name">
                 Vaša zdravlja je naš
                 <span className="text-emerald-600 block">prioritet</span>
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-xl text-gray-600 leading-relaxed" itemProp="description">
                 Skoro tri decenije brižljive nege za vašu porodicu. Pristupite našem loyalty programu 
                 i uživajte u ekskluzivnim pogodnostima i popustima.
               </p>

@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://avicenaplus.rs/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+
+# Allow important pages
+Allow: /loyalty-program
+Allow: /farmaceutske-usluge
+Allow: /kontakt 

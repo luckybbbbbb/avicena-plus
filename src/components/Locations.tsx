@@ -29,11 +29,11 @@ const Locations = () => {
   ];
 
   return (
-    <section id="locations" className="py-20 bg-white">
+    <section id="locations" className="py-20 bg-white" itemScope itemType="https://schema.org/Place">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4" itemProp="name">
             Naše lokacije
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -67,11 +67,11 @@ const Locations = () => {
                 <div className="space-y-4 mb-6">
                   <div className="flex items-center space-x-3">
                     <MapPin className="h-5 w-5 text-emerald-600" />
-                    <span className="text-gray-700">{location.address}</span>
+                    <span className="text-gray-700" itemProp="address">{location.address}</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Phone className="h-5 w-5 text-emerald-600" />
-                    <span className="text-gray-700">{location.phone}</span>
+                    <span className="text-gray-700" itemProp="telephone">{location.phone}</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Clock className="h-5 w-5 text-emerald-600" />

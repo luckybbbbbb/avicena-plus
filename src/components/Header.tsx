@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
+    <header className="bg-white shadow-lg sticky top-0 z-50" itemScope itemType="https://schema.org/Organization">
       {/* Top info bar */}
       <div className="bg-emerald-600 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,7 +28,7 @@ const Header = () => {
             </div>
             <div className="flex items-center space-x-1">
               <Phone className="h-4 w-4" />
-              <span>+381 20 123 456</span>
+              <span itemProp="telephone">+381 20 387343</span>
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@ const Header = () => {
               <div className="text-2xl font-bold">A+</div>
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Avicena Plus</h1>
+              <h1 className="text-2xl font-bold text-gray-900" itemProp="name">Avicena Plus</h1>
               <p className="text-sm text-emerald-600">29 godina tradicije</p>
             </div>
           </div>

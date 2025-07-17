@@ -66,7 +66,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section id="about" className="py-20 bg-gray-50" itemScope itemType="https://schema.org/Organization">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -74,10 +74,10 @@ const About = () => {
             <Award className="h-8 w-8 text-emerald-600" />
             <span className="text-emerald-600 font-semibold text-lg">29 godina tradicije</span>
           </div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4" itemProp="name">
             O Avicena Plus apoteci
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto" itemProp="description">
             Skoro tri decenije predano služimo zdravlju naše zajednice u Novom Pazaru. 
             Naša misija je pružanje najkvalitetnijih farmaceutskih usluga uz personalizovanu pažnju.
           </p>

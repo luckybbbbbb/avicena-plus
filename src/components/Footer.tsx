@@ -4,7 +4,7 @@ import { scrollToSection } from "../hooks/useSmoothScroll";
 
 const Footer = () => {
   return (
-    <footer id="contact" className="bg-gray-900 text-white">
+    <footer id="contact" className="bg-gray-900 text-white" itemScope itemType="https://schema.org/Organization">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid lg:grid-cols-4 gap-8">
           {/* Company info */}
@@ -14,11 +14,11 @@ const Footer = () => {
                 <div className="text-xl font-bold">A+</div>
               </div>
               <div>
-                <h3 className="text-xl font-bold">Avicena Plus</h3>
+                <h3 className="text-xl font-bold" itemProp="name">Avicena Plus</h3>
                 <p className="text-emerald-400 text-sm">29 godina tradicije</p>
               </div>
             </div>
-                        <p className="text-gray-400">
+                        <p className="text-gray-400" itemProp="description">
               Vaš partner za zdravlje u Novom Pazaru. Skoro tri decenije pružamo 
               najkvalitetnije farmaceutske usluge uz personalizovanu pažnju.
             </p>
@@ -127,14 +127,14 @@ const Footer = () => {
                 <Phone className="h-5 w-5 text-emerald-400" />
                 <div>
                   <p className="text-sm text-gray-400">Centrala</p>
-                  <p className="text-white">+381 20 387 343</p>
+                  <p className="text-white" itemProp="telephone">+381 20 387 343</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-emerald-400" />
                 <div>
                   <p className="text-sm text-gray-400">Email</p>
-                  <p className="text-white">info@avicenaplus.rs</p>
+                  <p className="text-white" itemProp="email">info@avicenaplus.rs</p>
                 </div>
               </div>
             </div>
